@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loading…</title>
+  <link rel="icon" id="favicon" href="">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="project.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <header id="site-nav">
+    <nav class="nav-inner container">
+      <a href="index.html" class="nav-logo" id="nav-logo"></a>
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#work">Work</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- PROJECT CONTENT -->
+  <main class="project-main">
+    <div class="container">
+      <a href="index.html#work" class="project-back" id="project-back">&#8592; All projects</a>
+
+      <header class="project-header">
+        <span class="project-category" id="project-category"></span>
+        <h1 class="project-title" id="project-title"></h1>
+        <span class="project-year" id="project-year"></span>
+        <p class="project-description" id="project-description"></p>
+      </header>
+
+      <div class="project-gallery" id="project-gallery"></div>
+    </div>
+  </main>
+
+  <!-- PREV / NEXT NAV -->
+  <nav class="project-nav" id="project-nav" aria-label="Adjacent projects">
+    <a class="project-nav-link project-nav-prev" id="project-nav-prev" href="#">
+      <span class="project-nav-icon" aria-hidden="true">&#8592;</span>
+      <span class="project-nav-text">
+        <span class="project-nav-direction">Previous</span>
+        <span class="project-nav-label" id="project-nav-prev-label"></span>
+      </span>
+    </a>
+    <a class="project-nav-link project-nav-next" id="project-nav-next" href="#">
+      <span class="project-nav-text">
+        <span class="project-nav-direction">Next</span>
+        <span class="project-nav-label" id="project-nav-next-label"></span>
+      </span>
+      <span class="project-nav-icon" aria-hidden="true">&#8594;</span>
+    </a>
+  </nav>
+
+  <!-- FOOTER -->
+  <footer id="site-footer" class="footer">
+    <div class="container footer-inner">
+      <p class="footer-copy" id="footer-copy"></p>
+      <nav class="footer-social" id="footer-social" aria-label="Social links"></nav>
+    </div>
+  </footer>
+
+  <script src="project.js"></script>
+</body>
+</html>

@@ -69,7 +69,6 @@
 
   let activeFilter     = 'All';
   let filteredProjects = allProjects.slice();
-  let lightboxIndex    = 0;
 
   const tabsContainer = document.getElementById('filter-tabs');
   const gridContainer = document.getElementById('project-grid');
@@ -95,11 +94,10 @@
 
   function renderGrid() {
     gridContainer.innerHTML = '';
-    filteredProjects.forEach((proj, idx) => {
-      const card = document.createElement('article');
+    filteredProjects.forEach(proj => {
+      const card = document.createElement('a');
       card.className = 'project-card';
-      card.tabIndex  = 0;
-      card.setAttribute('role', 'button');
+      card.href      = `project.html?id=${proj.id}`;
       card.setAttribute('aria-label', `View project: ${proj.title}`);
 
       /* image */
@@ -132,78 +130,12 @@
       body.append(catSpan, title, desc);
       card.append(imgWrap, body);
 
-      const open = () => {
-        lightboxTrigger = card;
-        lightboxIndex   = idx;
-        showLightbox(filteredProjects[idx]);
-      };
-      card.addEventListener('click', open);
-      card.addEventListener('keydown', e => {
-        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(); }
-      });
-
       gridContainer.appendChild(card);
     });
   }
 
   renderTabs();
   renderGrid();
-
-  /* ── Lightbox ─────────────────────────────────────────────── */
-  const lightbox    = document.getElementById('lightbox');
-  const lbImg       = document.getElementById('lightbox-img');
-  const lbCategory  = document.getElementById('lightbox-category');
-  const lbTitle     = document.getElementById('lightbox-title');
-  const lbYear      = document.getElementById('lightbox-year');
-  const lbDesc      = document.getElementById('lightbox-desc');
-  const lbClose     = document.getElementById('lightbox-close');
-  const lbBackdrop  = document.getElementById('lightbox-backdrop');
-  const lbPrev      = document.getElementById('lightbox-prev');
-  const lbNext      = document.getElementById('lightbox-next');
-
-  let lightboxTrigger = null;
-
-  function showLightbox(proj) {
-    lbImg.src     = proj.image;
-    lbImg.alt     = proj.title;
-    lbImg.style.display = '';
-    lbImg.onerror = () => { lbImg.style.display = 'none'; };
-
-    lbCategory.textContent = proj.category;
-    lbTitle.textContent    = proj.title;
-    lbYear.textContent     = proj.year;
-    lbDesc.textContent     = proj.full_description;
-
-    lightbox.classList.remove('hidden');
-    document.body.style.overflow = 'hidden';
-    lbClose.focus();
-  }
-
-  function closeLightbox() {
-    lightbox.classList.add('hidden');
-    document.body.style.overflow = '';
-    if (lightboxTrigger) {
-      lightboxTrigger.focus();
-      lightboxTrigger = null;
-    }
-  }
-
-  function navigate(direction) {
-    lightboxIndex = (lightboxIndex + direction + filteredProjects.length) % filteredProjects.length;
-    showLightbox(filteredProjects[lightboxIndex]);
-  }
-
-  lbClose.addEventListener('click', closeLightbox);
-  lbBackdrop.addEventListener('click', closeLightbox);
-  lbPrev.addEventListener('click', e => { e.stopPropagation(); navigate(-1); });
-  lbNext.addEventListener('click', e => { e.stopPropagation(); navigate(1); });
-
-  document.addEventListener('keydown', e => {
-    if (lightbox.classList.contains('hidden')) return;
-    if (e.key === 'Escape')     { closeLightbox(); return; }
-    if (e.key === 'ArrowLeft')  { navigate(-1); return; }
-    if (e.key === 'ArrowRight') { navigate(1); }
-  });
 
   /* ── Contact form ─────────────────────────────────────────── */
   document.getElementById('contact-intro').textContent = data.contact.intro;

@@ -55,6 +55,18 @@ Open `content.json` and find the relevant section:
 
 ---
 
+## How individual project pages work
+
+When a visitor clicks a project card, they are taken to a dedicated page for that project. This page shows:
+
+- The project title, category, year, and full description
+- A scrollable gallery of all photos for that project
+- Previous and next arrows at the bottom to move between projects
+
+The gallery images are defined in the `"gallery"` field of each project in `content.json`. You can add as many images as you like — they will stack vertically down the page. If `"gallery"` is absent or empty, the site falls back to showing the card thumbnail image.
+
+---
+
 ## How to add a new project
 
 1. Open `content.json` and find the `"projects"` section — it's a list of entries that each look like this:
@@ -64,8 +76,13 @@ Open `content.json` and find the relevant section:
      "title": "Interior Silence",
      "category": "Fine Arts",
      "image": "images/fine-arts/interior-silence.jpg",
+     "gallery": [
+       "images/fine-arts/interior-silence-1.jpg",
+       "images/fine-arts/interior-silence-2.jpg",
+       "images/fine-arts/interior-silence-3.jpg"
+     ],
      "description": "Short description visible on card.",
-     "full_description": "Longer description shown when the project is clicked.",
+     "full_description": "Longer description shown on the project page.",
      "year": "2023"
    }
    ```
@@ -78,12 +95,34 @@ Open `content.json` and find the relevant section:
    - `"id"` — give it a unique ID (e.g. `"proj-010"`)
    - `"title"` — your project title
    - `"category"` — the category this project belongs to (see below)
-   - `"image"` — the path to your image file (see "How to add images" below)
+   - `"image"` — the path to the image shown on the portfolio card (usually the best single photo)
+   - `"gallery"` — a list of image paths shown on the project page, in the order you want them displayed. Add one path per line inside the square brackets, separated by commas.
    - `"description"` — one or two sentences shown on the project card
-   - `"full_description"` — a longer description shown in the pop-up view
+   - `"full_description"` — a longer description shown at the top of the project page
    - `"year"` — the year as a four-digit string, e.g. `"2024"`
 
-5. Upload your image to the `images/` folder (see below), then commit the changes to `content.json`.
+5. Upload your images to the `images/` folder (see below), then commit the changes to `content.json`.
+
+---
+
+## How to add more images to an existing project
+
+1. Upload the new images to the relevant `images/` sub-folder (see "How to add images" below).
+2. Open `content.json` and find the project's `"gallery"` field:
+   ```json
+   "gallery": [
+     "images/fine-arts/interior-silence.jpg"
+   ]
+   ```
+3. Add the new image paths inside the square brackets, separated by commas:
+   ```json
+   "gallery": [
+     "images/fine-arts/interior-silence.jpg",
+     "images/fine-arts/interior-silence-detail.jpg",
+     "images/fine-arts/interior-silence-install.jpg"
+   ]
+   ```
+4. Commit the change. Images appear on the project page in the order listed.
 
 ---
 
@@ -178,9 +217,12 @@ The footer only shows links for platforms where you've entered a handle.
 
 ```
 /
-├── index.html          — the page structure (don't edit this)
+├── index.html          — portfolio home page (don't edit this)
+├── project.html        — individual project page template (don't edit this)
 ├── style.css           — visual styling (don't edit this)
-├── main.js             — site behaviour (don't edit this)
+├── project.css         — project page styling (don't edit this)
+├── main.js             — home page behaviour (don't edit this)
+├── project.js          — project page behaviour (don't edit this)
 ├── content.json        — all your content (edit this freely)
 ├── images/
 │   ├── about/          — portrait photo goes here

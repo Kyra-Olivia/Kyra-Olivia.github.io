@@ -11,7 +11,11 @@
       "Bash(curl -s -o /dev/null -w \"style.css: %{http_code}\\\\n\" http://localhost:8080/style.css)",
       "Bash(curl -s -o /dev/null -w \"main.js: %{http_code}\\\\n\" http://localhost:8080/main.js)",
       "Bash(kill %1)",
-      "Bash(kill 6625)"
+      "Bash(kill 6625)",
+      "Bash(echo \"PID: $!\")",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:8080/index.html)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:8080/project.html?id=proj-001)",
+      "Bash(kill 7941)"
     ]
   }
 }
