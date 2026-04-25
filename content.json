@@ -1,0 +1,112 @@
+{
+  "site": {
+    "name": "Kyra Elaine Voss",
+    "tagline": "Curator, Artist & Designer",
+    "favicon": "images/favicon.png"
+  },
+  "nav": {
+    "logo": "Kyra Elaine Voss"
+  },
+  "hero": {
+    "headline": "Art. Curation. Design.",
+    "subheading": "Multidisciplinary creative based in Amsterdam."
+  },
+  "about": {
+    "photo": "images/about/portrait.jpg",
+    "bio": "I work at the intersection of fine arts, spatial curation, and visual communication. With a background in art history from the Rijksacademie and over a decade of independent practice, I collaborate with galleries, cultural institutions, and brands to create environments and experiences that challenge the expected.\n\nMy practice spans oil painting, photographic series, exhibition design, and editorial work. I believe in slow, considered aesthetics — work that rewards attention.",
+    "cv_link": "files/kyra-voss-cv.pdf",
+    "cv_label": "Download CV"
+  },
+  "projects": [
+    {
+      "id": "proj-001",
+      "title": "Interior Silence",
+      "category": "Fine Arts",
+      "image": "images/fine-arts/interior-silence.jpg",
+      "description": "A series of large-format oil paintings exploring domestic space as psychological landscape.",
+      "full_description": "Interior Silence is a body of twelve oil paintings developed over two years in the artist's Amsterdam studio. Each work centres on a mundane domestic interior — a half-open drawer, a curtain caught in mid-billow — rendered in a palette of muted ochres and deep shadows. The series was exhibited at Galerie Schilder in 2023 and acquired in part by the Stedelijk Museum collection.",
+      "year": "2023"
+    },
+    {
+      "id": "proj-002",
+      "title": "Soft Architectures",
+      "category": "Fine Arts",
+      "image": "images/fine-arts/soft-architectures.jpg",
+      "description": "Mixed-media works examining the tension between structure and yielding material.",
+      "full_description": "Soft Architectures pairs cast concrete fragments with draped silk and raw linen in a series of nine sculptural assemblages. The works were developed during a residency at the Jan van Eyck Academie and first shown at Art Rotterdam 2022. Each piece weighs the permanence of architecture against the ephemerality of textile, asking which of the two constitutes the body.",
+      "year": "2022"
+    },
+    {
+      "id": "proj-003",
+      "title": "The Margin Studies",
+      "category": "Fine Arts",
+      "image": "images/fine-arts/margin-studies.jpg",
+      "description": "Graphite and ink drawings investigating the edges and peripheries of everyday vision.",
+      "full_description": "A suite of forty small-scale drawings made using graphite, iron gall ink, and wax resist. The Margin Studies document what sits at the border of perception — shadows at the edge of a lamp's reach, the corner where a painted wall meets unpainted plaster. Published as a limited-edition artist's book by Uitgeverij Plot in 2021.",
+      "year": "2021"
+    },
+    {
+      "id": "proj-004",
+      "title": "The Residual Room",
+      "category": "Curation",
+      "image": "images/curation/residual-room.jpg",
+      "description": "Group exhibition at Foam Museum exploring memory, absence, and the objects left behind.",
+      "full_description": "The Residual Room was a group exhibition I conceived and curated for Foam Fotografiemuseum Amsterdam in 2023. Featuring work by seven artists across photography, video, and installation, the show examined what remains after a person leaves a space — clothing draped over chairs, half-finished glasses of water, faint impressions in pillows. The exhibition attracted 11,000 visitors over six weeks.",
+      "year": "2023"
+    },
+    {
+      "id": "proj-005",
+      "title": "Threshold: Five Rooms",
+      "category": "Curation",
+      "image": "images/curation/threshold-five-rooms.jpg",
+      "description": "Site-specific exhibition for a former textile mill in Tilburg, structured as five interconnected environments.",
+      "full_description": "Threshold: Five Rooms transformed a decommissioned textile mill into five thematically distinct environments, each responding to a different aspect of the building's industrial history. Working with the architecture rather than against it, I curated works by twelve artists from eight countries. The exhibition was produced for the European Capital of Culture programme in 2024.",
+      "year": "2024"
+    },
+    {
+      "id": "proj-006",
+      "title": "Huis & Tuin Identity",
+      "category": "Graphic Design",
+      "image": "images/graphic-design/huis-tuin-identity.jpg",
+      "description": "Complete brand identity for an Amsterdam-based concept store specialising in artisan homewares.",
+      "full_description": "Huis & Tuin approached me to develop a visual identity that could hold the tension between the handmade and the refined. The resulting system centres on a hand-drawn wordmark, a two-colour palette of warm taupe and raw umber, and a typographic hierarchy drawn from Dutch modernist letterpress traditions. Delivered: logo suite, stationery, packaging system, signage templates, and digital style guide.",
+      "year": "2023"
+    },
+    {
+      "id": "proj-007",
+      "title": "Passage — Editorial Design",
+      "category": "Graphic Design",
+      "image": "images/graphic-design/passage-editorial.jpg",
+      "description": "Art direction and layout for a 96-page biannual arts and culture journal.",
+      "full_description": "Passage is a biannual journal published in partnership with the Amsterdam City Archive. I serve as art director, shaping the typographic system, image treatment, and editorial pacing across each issue. The design philosophy draws on mid-century Swiss grid principles adapted to the proportions of A4, printed on uncoated stock. Issues 1 through 5 are archived in the collection of the Museum of Art and Design Ghent.",
+      "year": "2022"
+    },
+    {
+      "id": "proj-008",
+      "title": "Haar & Huid",
+      "category": "Photography",
+      "image": "images/photography/haar-huid.jpg",
+      "description": "Portrait series documenting Dutch textile workers, focusing on hands and material texture.",
+      "full_description": "Haar & Huid (Hair & Skin) is a photographic portrait series made over eighteen months in Tilburg, Enschede, and Helmond — cities shaped by the Dutch textile industry. Shooting on medium-format film, the series focuses on the hands and faces of retired weavers, dyers, and seamstresses, foregrounding the material traces that decades of skilled work leave on a body. Published in De Groene Amsterdammer and exhibited at Nederlands Fotomuseum.",
+      "year": "2022"
+    },
+    {
+      "id": "proj-009",
+      "title": "Licht / Donker",
+      "category": "Photography",
+      "image": "images/photography/licht-donker.jpg",
+      "description": "A duotone study of winter light in Amsterdam's canal district, shot on 35mm black-and-white film.",
+      "full_description": "Licht / Donker (Light / Dark) is a series of forty-eight 35mm photographs made during the winter months of 2020–2021, when the city was quietest and the canal light at its most severe. Printed as silver gelatin prints in an edition of twelve, the series received honourable mention at the International Photography Awards and has been exhibited in Amsterdam, Berlin, and Tallinn.",
+      "year": "2021"
+    }
+  ],
+  "contact": {
+    "intro": "Available for curatorial projects, brand identity, editorial design, and fine arts commissions. Based in Amsterdam — working internationally.",
+    "formspree_endpoint": "https://formspree.io/f/XXXXXXXX"
+  },
+  "social": {
+    "instagram": "kyraelainevoss",
+    "linkedin": "kyra-voss",
+    "behance": ""
+  }
+}

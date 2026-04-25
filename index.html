@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loading…</title>
+  <link rel="icon" id="favicon" href="">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <header id="site-nav">
+    <nav class="nav-inner container">
+      <a href="#hero" class="nav-logo" id="nav-logo"></a>
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section id="hero" class="hero">
+    <div class="container hero-inner">
+      <h1 class="hero-headline" id="hero-headline"></h1>
+      <p class="hero-subheading" id="hero-subheading"></p>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about section" aria-labelledby="about-heading">
+    <h2 id="about-heading" class="visually-hidden">About</h2>
+    <div class="container about-inner">
+      <div class="about-photo-wrap">
+        <img class="about-photo" id="about-photo" alt="">
+      </div>
+      <div class="about-text">
+        <p class="about-bio" id="about-bio"></p>
+        <a class="btn" id="cv-link" href="#" style="display:none"></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section id="work" class="work section" aria-labelledby="work-heading">
+    <div class="container">
+      <h2 id="work-heading" class="visually-hidden">Work</h2>
+      <div class="filter-tabs" id="filter-tabs" role="group" aria-label="Filter projects by category"></div>
+      <div class="project-grid" id="project-grid"></div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact section" aria-labelledby="contact-heading">
+    <div class="container contact-inner">
+      <h2 id="contact-heading" class="visually-hidden">Contact</h2>
+      <p class="contact-intro" id="contact-intro"></p>
+      <form id="contact-form" novalidate>
+        <div class="form-group">
+          <label for="f-name">Name</label>
+          <input type="text" id="f-name" name="name" autocomplete="name" required>
+        </div>
+        <div class="form-group">
+          <label for="f-email">Email</label>
+          <input type="email" id="f-email" name="email" autocomplete="email" required>
+        </div>
+        <div class="form-group">
+          <label for="f-subject">Subject <span class="optional">(optional)</span></label>
+          <input type="text" id="f-subject" name="subject" autocomplete="off">
+        </div>
+        <div class="form-group">
+          <label for="f-message">Message</label>
+          <textarea id="f-message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-submit">Send Message</button>
+        <p class="form-status" id="form-status" aria-live="polite" role="status"></p>
+      </form>
+      <div class="form-success hidden" id="form-success" aria-live="polite">
+        <p>Thank you — your message has been sent. I'll be in touch soon.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="site-footer" class="footer">
+    <div class="container footer-inner">
+      <p class="footer-copy" id="footer-copy"></p>
+      <nav class="footer-social" id="footer-social" aria-label="Social links"></nav>
+    </div>
+  </footer>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox hidden" id="lightbox" role="dialog" aria-modal="true" aria-label="Project details">
+    <div class="lightbox-backdrop" id="lightbox-backdrop"></div>
+    <div class="lightbox-frame">
+      <button class="lightbox-arrow lightbox-prev" id="lightbox-prev" aria-label="Previous project">&#8592;</button>
+      <div class="lightbox-panel" role="document">
+        <div class="lightbox-header">
+          <button class="lightbox-close" id="lightbox-close" aria-label="Close project details">&times;</button>
+        </div>
+        <div class="lightbox-scroll">
+          <div class="lightbox-content">
+            <div class="lightbox-img-wrap">
+              <img class="lightbox-img" id="lightbox-img" alt="">
+            </div>
+            <div class="lightbox-info">
+              <span class="lightbox-category" id="lightbox-category"></span>
+              <h2 class="lightbox-title" id="lightbox-title"></h2>
+              <span class="lightbox-year" id="lightbox-year"></span>
+              <p class="lightbox-desc" id="lightbox-desc"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="lightbox-arrow lightbox-next" id="lightbox-next" aria-label="Next project">&#8594;</button>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

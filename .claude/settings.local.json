@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 *)",
+      "Bash(grep -n '#[0-9a-fA-F]\\\\{3,6\\\\}' /home/momo/projects/sites/kyra-portfolio/style.css)",
+      "Bash(node --check main.js)",
+      "Bash(python3 -m http.server 8080)",
+      "Bash(echo \"Server PID: $!\")",
+      "Bash(curl -s http://localhost:8080/)",
+      "Bash(curl -s http://localhost:8080/content.json)",
+      "Bash(curl -s -o /dev/null -w \"style.css: %{http_code}\\\\n\" http://localhost:8080/style.css)",
+      "Bash(curl -s -o /dev/null -w \"main.js: %{http_code}\\\\n\" http://localhost:8080/main.js)",
+      "Bash(kill %1)",
+      "Bash(kill 6625)"
+    ]
+  }
+}
