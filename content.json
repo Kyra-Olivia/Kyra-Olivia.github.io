@@ -33,7 +33,7 @@
     {
       "id": "proj-002",
       "title": "Soft Architectures",
-      "category": "Fine Arts",
+      "category": "Design",
       "image": "images/fine-arts/soft-architectures.jpg",
       "gallery": [
         "images/fine-arts/soft-architectures.jpg"
@@ -45,7 +45,7 @@
     {
       "id": "proj-003",
       "title": "The Margin Studies",
-      "category": "Fine Arts",
+      "category": "Fine Art Archive",
       "image": "images/fine-arts/margin-studies.jpg",
       "gallery": [
         "images/fine-arts/margin-studies.jpg"
@@ -57,7 +57,7 @@
     {
       "id": "proj-004",
       "title": "The Residual Room",
-      "category": "Curation",
+      "category": "Fine Art Archive",
       "image": "images/curation/residual-room.jpg",
       "gallery": [
         "images/curation/residual-room.jpg"
@@ -69,7 +69,7 @@
     {
       "id": "proj-005",
       "title": "Threshold: Five Rooms",
-      "category": "Curation",
+      "category": "Fine Art Archive",
       "image": "images/curation/threshold-five-rooms.jpg",
       "gallery": [
         "images/curation/threshold-five-rooms.jpg"
@@ -81,7 +81,7 @@
     {
       "id": "proj-006",
       "title": "Huis & Tuin Identity",
-      "category": "Graphic Design",
+      "category": " Design",
       "image": "images/graphic-design/huis-tuin-identity.jpg",
       "gallery": [
         "images/graphic-design/huis-tuin-identity.jpg"
@@ -93,7 +93,7 @@
     {
       "id": "proj-007",
       "title": "Passage — Editorial Design",
-      "category": "Graphic Design",
+      "category": "Design",
       "image": "images/graphic-design/passage-editorial.jpg",
       "gallery": [
         "images/graphic-design/passage-editorial.jpg"
