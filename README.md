@@ -177,6 +177,31 @@ The download button will disappear from the site automatically.
 
 ---
 
+## How to set a custom cursor
+
+You can replace the browser's default arrow cursor with an image of your choosing — for example a small cross, a dot, or a hand-drawn mark.
+
+1. Prepare your cursor image:
+   - Use a **PNG file** with a transparent background.
+   - Keep it small — **32 × 32 pixels** is the recommended size. Browsers may ignore larger images on some systems.
+   - Avoid spaces in the file name (e.g. `my-cursor.png` not `my cursor.png`).
+
+2. Upload the image to your repository. A good place is a new `images/cursor/` folder, but anywhere inside `images/` works.
+
+3. In `content.json`, find the `"site"` section and set the `"cursor"` field to the path of your image:
+   ```json
+   "site": {
+     "name": "Kyra Elaine Voss",
+     "cursor": "images/cursor/my-cursor.png"
+   }
+   ```
+
+4. Commit the change. The cursor will appear across the whole site.
+
+> **Note:** The custom cursor replaces the default arrow. Links and buttons keep their standard pointer cursor (the hand) so visitors can still tell what's clickable. To remove the custom cursor later, set `"cursor"` to an empty string: `""`.
+
+---
+
 ## How to set up Formspree (contact form)
 
 Formspree lets visitors send you messages through your contact form, delivered to your email inbox.

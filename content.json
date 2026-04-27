@@ -2,7 +2,8 @@
   "site": {
     "name": "Kyra Elaine Voss",
     "tagline": "Curator, Artist & Designer",
-    "favicon": "images/favicon.png"
+    "favicon": "images/favicon.png",
+    "cursor": ""
   },
   "nav": {
     "logo": "Kyra Elaine Voss"
