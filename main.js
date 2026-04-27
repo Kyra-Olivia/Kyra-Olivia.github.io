@@ -23,6 +23,9 @@
   if (data.site.favicon) {
     document.getElementById('favicon').href = data.site.favicon;
   }
+  if (data.site.cursor) {
+    document.body.style.cursor = `url('${data.site.cursor}'), auto`;
+  }
 
   /* ── Nav ──────────────────────────────────────────────────── */
   document.getElementById('nav-logo').textContent = data.nav.logo;
