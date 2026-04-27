@@ -20,15 +20,15 @@
   "projects": [
     {
       "id": "proj-001",
-      "title": “Tsuki Matcha”,
-      "category": “Design”,
+      "title": "Tsuki Matcha",
+      "category": "Design",
       "image": "images/fine-arts/interior-silence.jpg",
       "gallery": [
         "images/fine-arts/interior-silence.jpg"
       ],
-      "description": “Case study: Brand design for a conceptual matcha brand.”,
-      "full_description": “Tsuki Matcha is a (conceptual) matcha brand. I wanted to design something with one of my favourite colour combinations (pink and green). I used soft colours,  minimalistic visuals and a decorative font to reflect a calm scerene brand. Similar to the feeling one expereinces when drinking a warm cup of tea.”,
-      "year": "2026”
+      "description": "Case study: Brand design for a conceptual matcha brand.",
+      "full_description": "Tsuki Matcha is a (conceptual) matcha brand. I wanted to design something with one of my favourite colour combinations (pink and green). I used soft colours,  minimalistic visuals and a decorative font to reflect a calm scerene brand. Similar to the feeling one expereinces when drinking a warm cup of tea.",
+      "year": "2026"
     },
     {
       "id": "proj-002",
